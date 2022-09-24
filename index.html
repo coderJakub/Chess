@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="updateBoard()">
+    <div class="background">
+        <div class="cycle"></div>
+        <div class="headmenu">
+            <div class="player">
+                <p>Player 1</p>
+                <div class="captured-figurs">
+                    <div class="images" id="imagesp1">
+                        <!-- captured figurs added by js -->
+                    </div>
+                    <p id="whiteCount" class="count"></p>
+                </div>
+            </div>
+            <div class="player">
+                <p>Player 2</p>
+                <div class="captured-figurs">
+                    <div class="images" id="imagesp2">
+                        <!-- captured figurs added by js -->
+                    </div>
+                    <p id="blackCount" class="count"></p>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="column">
+                <div class="field" id="00" onclick="select(this)"></div>
+                <div class="field" id="01" onclick="select(this)"></div>
+                <div class="field" id="02" onclick="select(this)"></div>
+                <div class="field" id="03" onclick="select(this)"></div>
+                <div class="field" id="04" onclick="select(this)"></div>
+                <div class="field" id="05" onclick="select(this)"></div>
+                <div class="field" id="06" onclick="select(this)"></div>
+                <div class="field" id="07" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" value="not selectet" id="10" onclick="select(this)"></div>
+                <div class="field" id="11" onclick="select(this)"></div>
+                <div class="field" id="12" onclick="select(this)"></div>
+                <div class="field" id="13" onclick="select(this)"></div>
+                <div class="field" id="14" onclick="select(this)"></div>
+                <div class="field" id="15" onclick="select(this)"></div>
+                <div class="field" id="16" onclick="select(this)"></div>
+                <div class="field" id="17" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="20" onclick="select(this)"></div>
+                <div class="field" id="21" onclick="select(this)"></div>
+                <div class="field" id="22" onclick="select(this)"></div>
+                <div class="field" id="23" onclick="select(this)"></div>
+                <div class="field" id="24" onclick="select(this)"></div>
+                <div class="field" id="25" onclick="select(this)"></div>
+                <div class="field" id="26" onclick="select(this)"></div>
+                <div class="field" id="27" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="30" onclick="select(this)"></div>
+                <div class="field" id="31" onclick="select(this)"></div>
+                <div class="field" id="32" onclick="select(this)"></div>
+                <div class="field" id="33" onclick="select(this)"></div>
+                <div class="field" id="34" onclick="select(this)"></div>
+                <div class="field" id="35" onclick="select(this)"></div>
+                <div class="field" id="36" onclick="select(this)"></div>
+                <div class="field" id="37" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="40" onclick="select(this)"></div>
+                <div class="field" id="41" onclick="select(this)"></div>
+                <div class="field" id="42" onclick="select(this)"></div>
+                <div class="field" id="43" onclick="select(this)"></div>
+                <div class="field" id="44" onclick="select(this)"></div>
+                <div class="field" id="45" onclick="select(this)"></div>
+                <div class="field" id="46" onclick="select(this)"></div>
+                <div class="field" id="47" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="50" onclick="select(this)"></div>
+                <div class="field" id="51" onclick="select(this)"></div>
+                <div class="field" id="52" onclick="select(this)"></div>
+                <div class="field" id="53" onclick="select(this)"></div>
+                <div class="field" id="54" onclick="select(this)"></div>
+                <div class="field" id="55" onclick="select(this)"></div>
+                <div class="field" id="56" onclick="select(this)"></div>
+                <div class="field" id="57" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="60" onclick="select(this)"></div>
+                <div class="field" id="61" onclick="select(this)"></div>
+                <div class="field" id="62" onclick="select(this)"></div>
+                <div class="field" id="63" onclick="select(this)"></div>
+                <div class="field" id="64" onclick="select(this)"></div>
+                <div class="field" id="65" onclick="select(this)"></div>
+                <div class="field" id="66" onclick="select(this)"></div>
+                <div class="field" id="67" onclick="select(this)"></div>
+            </div>
+            <div class="column">
+                <div class="field" id="70" onclick="select(this)"></div>
+                <div class="field" id="71" onclick="select(this)"></div>
+                <div class="field" id="72" onclick="select(this)"></div>
+                <div class="field" id="73" onclick="select(this)"></div>
+                <div class="field" id="74" onclick="select(this)"></div>
+                <div class="field" id="75" onclick="select(this)"></div>
+                <div class="field" id="76" onclick="select(this)"></div>
+                <div class="field" id="77" onclick="select(this)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

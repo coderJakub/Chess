@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: black;
+}
+.board{
+    margin-left: -15px;
+    box-shadow: 23px 16px 33px 9px #000000;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-auto-flow: column
+}
+.column:nth-child(1) .field:nth-child(8){
+    border-radius: 0 0 0 10px;
+}
+.column:nth-child(8) .field:nth-child(8){
+    border-radius: 0 0 10px 0;
+}
+.field{
+    background-image: url("images/white_field.jpg");
+    height: 50px;
+    width: 50px;
+    border: black solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column:nth-child(odd) .field:nth-child(odd), .column:nth-child(even) .field:nth-child(even){
+    background-image: url("images/black_fields.jpg");
+}
+.selectet{
+    background-image: none !important;
+    background-color: orange !important;
+}
+.selectet-field{
+    background-image: none !important; 
+    background-color: red !important;
+}
+.headmenu{
+    width: 414px;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    box-shadow:  10px 5px 33px 9px #000000;
+    background-image: url("images/background.jpg");
+    border: black solid 1px;
+    display:flex;
+    justify-content: center;
+    gap: 60px;
+}
+.player{
+    margin-top: 10px;
+    height : 90px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.player p{
+    color: rgb(238, 223, 223);
+}
+.player p:nth-child(1){
+    font-weight: bolder;
+}
+.captured-figurs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.images{
+    position: relative;
+    min-width: 140px;
+    height: 20px;
+}
+.images img{
+    position: absolute;
+    top: 50%; 
+    margin-top: -10px;
+}
+.background{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/background.jpg");
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cycle{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    width: 15px;
+    background-image: url("images/background.jpg");
+}
